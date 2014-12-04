@@ -14,7 +14,13 @@ _______________
 $inline math$
 
 $$
-    equation <= EQ
+    != == <= >= << >> !|| || ~~ ~= ~
+    -> <=> <- |-> => <-> <=>
+    Alpha alpha Beta beta Gamma gamma Delta delta Epsilon epsilon varepsilon Zeta zeta
+    Eta eta Theta theta vartheta Iota iota Kappa kappa varkappa Lambda lambda Mu mu
+    Nu nu Xi xi Omicron omicron Pi pi varpi Rho rho varrho Sigma sigma varsigma
+    Tau tau Upsilon upsilon Phi phi varphi Chi chi Psi psi Omega omega
+    forall varepsilon > 0, exists N > 0, forall n > N, forall x in E => |f_n(x) - l(x)| < varepsilon
 $$
 
 +-----------new chapter / part-------+
