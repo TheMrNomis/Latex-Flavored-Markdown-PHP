@@ -18,17 +18,15 @@
                     {
                         case("b"):
                             $LFM = " ".$LFM." ";
-                            $latex = " ".$latex." ";
                         break;
                         case("l"):
                             $LFM = " ".$LFM;
-                            $latex = " ".$latex;
                         break;
                         case("r"):
                             $LFM = $LFM." ";
-                            $latex = $latex." ";
                         break;
                     }
+                    $latex = " ".$latex." ";
                     $subject = str_ireplace($LFM, $latex, $subject);
                 }
             }

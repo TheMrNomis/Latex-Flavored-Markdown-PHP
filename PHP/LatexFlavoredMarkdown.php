@@ -2,7 +2,7 @@
 <?php
     include_once("mathHandler.php");
 
-    $origin_text = file_get_contents("../example.md");
+    $origin_text = file_get_contents("../example.lmd");
     $text = explode("$$", $origin_text);
     print_r($text[1]);
     for($i=1; $i<count($text); $i+=2)

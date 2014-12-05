@@ -23,6 +23,27 @@ n   @   ||      @   \parallel
 n   @   ~~      @   \approx
 n   @   ~=      @   \simeq
 n   @   ~       @   \sim
+b   @   *       @   \times
+n   @   *       @   \cdot
+#other
+b   @   inf         @   \infty
+b   @   infty       @   \infty
+b   @   infinity    @   \infty
+#logic
+b   @   exists      @   \exists
+b   @   !exists     @   \nexists
+b   @   forall      @   \forall
+b   @   neg         @   \neg
+#sets
+b   @   in          @   \in
+b   @   !in         @   \notin
+b   @   ni          @   \ni
+b   @   subset      @   \subset
+b   @   supset      @   \supset
+b   @   subseteq    @   \subseteq
+b   @   !subseteq   @   \nsubseteq
+b   @   inter       @   \cap
+b   @   union       @   \cup
 #greek
 b   @   Alpha       @   A
 b   @   alpha       @   \alpha
@@ -79,16 +100,3 @@ b   @   Psi         @   \Psi
 b   @   psi         @   \psi
 b   @   Omega       @   \Omega
 b   @   omega       @   \omega
-#logic
-b   @   exists      @   \exists
-b   @   !exists     @   \nexists
-b   @   forall      @   \forall
-b   @   neg         @   \neg
-#sets
-b   @   in          @   \in
-b   @   !in         @   \notin
-b   @   ni          @   \ni
-b   @   subset      @   \subset
-b   @   supset      @   \supset
-b   @   subseteq    @   \subseteq
-b   @   !subseteq   @   \nsubseteq
