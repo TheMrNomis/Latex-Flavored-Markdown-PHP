@@ -24,7 +24,9 @@ $$
 
     forall varepsilon > 0, exists N > 0, forall n > N, forall x in E => |f_n(x) - l(x)| < varepsilon
     >
-    pi = 4 * sum from n=0 to inf (-1)^n over 2*n+1
+    pi = 4 * sum from n=0 to inf (-1)^n over 2n+1
+
+    _dx
 $$
 
 +-----------new chapter / part-------+

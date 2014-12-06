@@ -1,0 +1,25 @@
+#$x means argument x (1 <= x <= 9)
+# argv number @ LFM @ Latex
+#maths functions
+2   @   $1 over $2  @   \frac{$1}{$2}
+1   @   from $1     @   _{$1}
+1   @   to $1       @   ^{$1}
+#trigo
+1   @   cos $1      @   \cos{$1}
+1   @   sin $1      @   \sin{$1}
+1   @   tan $1      @   \tan{$1}
+1   @   cot $1      @   \cot{$1}
+1   @   asin $1     @   \arcsin{$1}
+1   @   arcsin $1   @   \arcsin{$1}
+1   @   acos $1     @   \arccos{$1}
+1   @   arccos $1   @   \arccos{$1}
+1   @   atan $1     @   \arctan{$1}
+1   @   arctan $1   @   \arctan{$1}
+1   @   acot $1     @   \arccot{$1}
+1   @   arccot      @   \arccot{$1}
+1   @   cosh $1     @   \cosh{$1}
+1   @   sinh $1     @   \sinh{$1}
+1   @   tanh $1     @   \tanh{$1}
+1   @   coth $1     @   \coth{$1}
+1   @   sec $1      @   \sec{$1}
+1   @   csc $1      @   \csc{$1}

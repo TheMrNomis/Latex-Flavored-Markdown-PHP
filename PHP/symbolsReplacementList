@@ -24,7 +24,9 @@ n   @   ~~      @   \approx
 n   @   ~=      @   \simeq
 n   @   ~       @   \sim
 b   @   *       @   \times
-n   @   *       @   \cdot
+#functions
+b   @   sum     @   \sum
+b   @   int     @   \int
 #other
 b   @   inf         @   \infty
 b   @   infty       @   \infty
