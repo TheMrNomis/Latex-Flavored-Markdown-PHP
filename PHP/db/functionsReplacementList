@@ -1,6 +1,8 @@
 #$x means argument x (1 <= x <= 9)
 # argv number @ LFM @ Latex
 #maths functions
+1   @   _d $1       @   {{\partial}$1}
+1   @   d $1        @   {\mathrm{d}$1}
 2   @   $1 over $2  @   \frac{$1}{$2}
 1   @   from $1     @   _{$1}
 1   @   to $1       @   ^{$1}

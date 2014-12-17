@@ -11,6 +11,9 @@ n   @   |->     @   \mapsto
 n   @   ->      @   \rightarrow
 n   @   <-      @   \leftarrow
 n   @   =>      @   \Rightarrow
+#partial and differential
+#l   @   d       @   \mathrm{d}
+#l   @   _d      @   {\partial}
 #operators
 n   @   !=      @   \neq
 n   @   ==      @   \equiv
