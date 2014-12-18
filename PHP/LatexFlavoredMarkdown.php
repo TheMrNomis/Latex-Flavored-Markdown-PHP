@@ -8,7 +8,11 @@
     require $basedir."PHP/textHandler.php";
     require $basedir."PHP/titlePageHandler.php";
 
-    $settings = \LFM\Utils\loadConfig($basedir."PHP/conf/settings.conf");
+    $settings = array(
+    'quiet' => false,
+    'latex' => true,
+    'term-output' => false
+    );
 
     for($i = 1; $i < $argc; $i++)
     {
@@ -16,15 +20,49 @@
         {
             case '-q':
             case '--quiet':
-                $config['quiet'] = true;
+                $settings['quiet'] = true;
                 break;
             case '-n':
             case '--nolatex':
-                $config['latex'] = false;
+                $settings['latex'] = false;
                 break;
+            case '-l':
+            case '--latex':
+                $settings['latex'] = true;
+                break;
+            case '-t':
+            case '--term-output':
+                $settings['term-output'] = true;
+                break;
+            case '-f':
+            case '--file-output':
+                $settings['term-output'] = false;
+                break;
+            case '-o':
+            case '--output':
+                $settings['output-file'] = $argv[++$i];
+                break;
+            case '-i':
+            case '--input':
+                $i++;
+            default:
+                $settings['input-file'] = $argv[$i];
+
         }
     }
-    $origin_text = file_get_contents($basedir."example.lmd");
+
+    if(!isset($settings['input-file']))
+    {
+        echo("no file specified\n");
+        exit;
+    }
+    if(!file_exists($settings['input-file']))
+    {
+        echo("no such file as ".$settings['input-file']."\n");
+        exit;
+    }
+
+    $origin_text = file_get_contents($settings['input-file']);
     $document = explode("++++", $origin_text, 2);
 
     $defaultConfig = \LFM\Utils\loadConfig($basedir."PHP/conf/default.conf");
@@ -59,6 +97,32 @@
     ".$document_text."
     \end{document}";
 
-    //end
-    print_r($latex);
+    //output
+    if(isset($settings['term-output']) && $settings['term-output'])
+    {
+        echo $latex;
+    }
+    else
+    {
+        if(!isset($settings['output-file']))
+            $settings['output-file'] = "tex/LFMouput";
+        if(!isset($settings['latex']))
+            $settings['latex'] = true;
+
+        $fileName = $basedir.$settings['output-file'].".tex";
+        if(file_exists($fileName))
+            unlink($fileName);
+        $file = fopen($fileName, 'w');
+        fwrite($file, $latex);
+        fclose($file);
+
+        if($settings['latex'])
+        {
+            if($settings['quiet'])
+                exec(escapeshellcmd("pdflatex ".$settings['output-file'].".tex"));
+            else
+                system(escapeshellcmd("pdflatex -output-directory tex/ ".$settings['output-file'].".tex"));
+        }
+    }
+#    print_r($latex);
 ?>

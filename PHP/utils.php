@@ -18,6 +18,11 @@
             if(strpos($confLine, ":") !== false)
             {
                 list($key, $value) = explode(":", $confLine, 2);
+                $v = \trim($value);
+                if($v == "false")
+                    $v = false;
+                else if($v == "true")
+                    $v = true;
                 $params[\trim($key)] = \trim($value);
             }
         }

@@ -11,9 +11,33 @@ n   @   |->     @   \mapsto
 n   @   ->      @   \rightarrow
 n   @   <-      @   \leftarrow
 n   @   =>      @   \Rightarrow
-#partial and differential
-#l   @   d       @   \mathrm{d}
-#l   @   _d      @   {\partial}
+#set names
+b   @   |A      @   \mathbb{A}
+b   @   |B      @   \mathbb{B}
+b   @   |C      @   \mathbb{C}
+b   @   |D      @   \mathbb{D}
+b   @   |E      @   \mathbb{E}
+b   @   |F      @   \mathbb{F}
+b   @   |G      @   \mathbb{G}
+b   @   |H      @   \mathbb{H}
+b   @   |I      @   \mathbb{I}
+b   @   |J      @   \mathbb{J}
+b   @   |K      @   \mathbb{K}
+b   @   |L      @   \mathbb{L}
+b   @   |M      @   \mathbb{M}
+b   @   |N      @   \mathbb{N}
+b   @   |O      @   \mathbb{O}
+b   @   |P      @   \mathbb{P}
+b   @   |Q      @   \mathbb{Q}
+b   @   |R      @   \mathbb{R}
+b   @   |S      @   \mathbb{S}
+b   @   |T      @   \mathbb{T}
+b   @   |U      @   \mathbb{U}
+b   @   |V      @   \mathbb{V}
+b   @   |W      @   \mathbb{W}
+b   @   |X      @   \mathbb{X}
+b   @   |Y      @   \mathbb{Y}
+b   @   |Z      @   \mathbb{Z}
 #operators
 n   @   !=      @   \neq
 n   @   ==      @   \equiv
