@@ -95,7 +95,7 @@
 \begin{document}'.
     $documentConfig['titlepage']."
     ".$document_text."
-    \end{document}";
+\end{document}";
 
     //output
     if(isset($settings['term-output']) && $settings['term-output'])
