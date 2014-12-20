@@ -54,6 +54,17 @@
                 $itemize[$itemize_sublevel] = false;
             }
         }
+
+        //carriage return gestion (\\ in latex)
+        $was_text = false;
+        for($i = 0; $i < count($subject_lines); $i++)
+        {
+            $is_text = preg_match("#^\w#", trim($subject_lines[$i]));
+            if($is_text && $was_text)
+                $subject_lines[$i-1] = $subject_lines[$i-1].' \\\\';
+            $was_text = $is_text;
+        }
+
         $subject = implode("\n", $subject_lines);
 
         return $subject;
@@ -62,7 +73,7 @@
     function transformInline($subject, $config)
     {
         $subject = str_replace("\n", " \n", $subject);
-        $subject = preg_replace("#(\s)_([^_].{0,})_(\sw)#U", '$1\textit{$2}$3', $subject); //italic
+        $subject = preg_replace("#(\s)_([^_].{0,})_(\s)#U", '$1\textit{$2}$3', $subject); //italic
         $subject = preg_replace('#(\s)__([^_].{0,})__(\s)#U', '$1\textbf{$2}$3', $subject); //bold
         $subject = str_replace(" \n", "\n", $subject);
         return $subject;

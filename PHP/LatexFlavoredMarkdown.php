@@ -119,7 +119,7 @@
         if($settings['latex'])
         {
             if($settings['quiet'])
-                exec(escapeshellcmd("pdflatex ".$settings['output-file'].".tex"));
+                exec(escapeshellcmd("pdflatex -output-directory tex/ ".$settings['output-file'].".tex"));
             else
                 system(escapeshellcmd("pdflatex -output-directory tex/ ".$settings['output-file'].".tex"));
         }

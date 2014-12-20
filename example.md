@@ -1,6 +1,6 @@
 title: Latex Flavored Markdown
 author: TheMrNomis
-date: 2014-11-23
+date: 23 Novembre 2014
 type: report
 ++++
 
