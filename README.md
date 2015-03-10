@@ -2,6 +2,8 @@ Latex-Flavored-Markdown-PHP
 ===========================
 simple script to translate markdown into latex-generated PDF
 
+This project is deprecated, please check the C++ version ( https://github.com/TheMrNomis/Latex-Flavored-Markdown )
+
 usage
 -----
 `./LFM.php <filename.md>` (from inside the Latex-Flavored-Markdown-PHP folder)
